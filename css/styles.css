@@ -22,7 +22,6 @@ h1, h2, h3 { margin: 0; }
 main {
     display: grid;
     grid-template-columns: (2fr, 1fr);
-    /* position: relative; */
 }
 
 /* LOGO */
@@ -108,10 +107,9 @@ p { font-weight: 400; }
     main {
         grid-template-columns: (1fr);
         width: 100%;
+        height: 100vh;
     }
-    .fondo {
-        width: 0;
-    }
+    .fondo { width: 0; }
     .logo {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -126,14 +124,25 @@ p { font-weight: 400; }
         background-repeat: no-repeat;
         background-size: contain;
         max-width: 100%;
-        height: 30rem;
+        height: 26rem;
     }
-    .photo img {
-        width: 0;
-    }
+    .photo img { width: 0; }
     .content {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
-        max-width: 90%;
+        max-width: 375px;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        padding: 6rem 0 10rem 0;
+        background: repeating-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)   );
     }
+    .content-camp {
+        width: 95%;
+        padding: 1rem 3rem;
+        text-align: center;
+    }
+    .titulo { font-size: 4rem; }
+    .titulo, p { margin-bottom: 3rem; }
+    .arrow-button { width: 7rem; }
 }
