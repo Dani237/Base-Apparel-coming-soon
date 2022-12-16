@@ -69,6 +69,7 @@ p { font-weight: 400; }
     background-size: contain;
     grid-column: 1 / 2;
     grid-row: 1 / 7;
+    background: repeating-linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 }
 
 /* EMAIL */
