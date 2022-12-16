@@ -79,6 +79,15 @@ p { font-weight: 400; }
     width: 100%;
     border-radius: 7rem;
 }
+.error-icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 11rem;
+}
+.error-message p {
+    margin-left: 2rem;
+    color: var(--s-red);
+}
 .arrow-button {
     display: flex;
     justify-content: center;
@@ -145,4 +154,6 @@ p { font-weight: 400; }
     .titulo { font-size: 4rem; }
     .titulo, p { margin-bottom: 3rem; }
     .arrow-button { width: 7rem; }
+    .error-icon { right: 9rem; }
+    .error-message p { margin-left: 0; }
 }
